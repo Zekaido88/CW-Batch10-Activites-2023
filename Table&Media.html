@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>CSS Getting Started</title>
+</head>
+<body>
+  <!--Table-->
+  <h1 class="red-text text-lighten-2 center">Table</h1>
+  <div class="divider"></div>
+  <div class="container">
+    <p>Tables are a nice way to organize a lot of data. We provide a few utility classes to help you style your table as easily as possible. In addition, to improve mobile experience, all tables on mobile-screen widths are centered automatically.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Item Name</th>
+          <th>Item Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Alvin</td>
+          <td>Eclair</td>
+          <td>0.17</td>
+        </tr>
+        <tr>
+          <td>Allan</td>
+          <td>JellyBean</td>
+          <td>0.97</td>
+        </tr>
+        <tr>
+          <td>Kristoffer</td>
+          <td>Lollipop</td>
+          <td>0.12</td>
+        </tr>
+        <tr>
+          <td>Alvin</td>
+          <td>Eclair</td>
+          <td>0.17</td>
+        </tr>
+      </tbody>
+    </table>
+  <h3 class="red-text text-lighten-2">Striped Table</h3>
+  <div class="divider"></div>
+    <p>Add class="striped" to the table tag for a striped table</p>
+    <table class="striped">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Item Name</th>
+          <th>Item Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Alvin</td>
+          <td>Eclair</td>
+          <td>0.17</td>
+        </tr>
+        <tr>
+          <td>Allan</td>
+          <td>JellyBean</td>
+          <td>0.97</td>
+        </tr>
+        <tr>
+          <td>Kristoffer</td>
+          <td>Lollipop</td>
+          <td>0.12</td>
+        </tr>
+        <tr>
+          <td>Alvin</td>
+          <td>Eclair</td>
+          <td>0.17</td>
+        </tr>
+      </tbody>
+    </table>
+  <h3 class="red-text text-lighten-2">Highlight Table</h3>
+  <div class="divider"></div>
+    <p>Add class="highlight" to the table tag for a highlight table</p>
+    <table class="highlight">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Item Name</th>
+          <th>Item Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Alvin</td>
+          <td>Eclair</td>
+          <td>0.17</td>
+        </tr>
+        <tr>
+          <td>Allan</td>
+          <td>JellyBean</td>
+          <td>0.97</td>
+        </tr>
+        <tr>
+          <td>Kristoffer</td>
+          <td>Lollipop</td>
+          <td>0.12</td>
+        </tr>
+        <tr>
+          <td>Alvin</td>
+          <td>Eclair</td>
+          <td>0.17</td>
+        </tr>
+      </tbody>
+    </table>
+  <h3 class="red-text text-lighten-2">Centered Table</h3>
+  <div class="divider"></div>
+    <p>Add class="centered" to the table tag for a centered table</p>
+    <table class="centered">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Item Name</th>
+          <th>Item Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Alvin</td>
+          <td>Eclair</td>
+          <td>0.17</td>
+        </tr>
+        <tr>
+          <td>Allan</td>
+          <td>JellyBean</td>
+          <td>0.97</td>
+        </tr>
+        <tr>
+          <td>Kristoffer</td>
+          <td>Lollipop</td>
+          <td>0.12</td>
+        </tr>
+        <tr>
+          <td>Alvin</td>
+          <td>Eclair</td>
+          <td>0.17</td>
+        </tr>
+      </tbody>
+    </table>
+  <h3 class="red-text text-lighten-2">Responsive Table</h3>
+  <div class="divider"></div>
+    <p>Add class="responsive" to the table tag for a responsive table</p>
+    <table class="responsive-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Item Name</th>
+          <th>Item Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Alvin</td>
+          <td>Eclair</td>
+          <td>0.17</td>
+        </tr>
+        <tr>
+          <td>Allan</td>
+          <td>JellyBean</td>
+          <td>0.97</td>
+        </tr>
+        <tr>
+          <td>Kristoffer</td>
+          <td>Lollipop</td>
+          <td>0.12</td>
+        </tr>
+        <tr>
+          <td>Alvin</td>
+          <td>Eclair</td>
+          <td>0.17</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+ <!--Media-->
+  <h1 class="red-text text-lighten-2 center">Media CSS</h1>
+  <div class="divider"></div>
+  <div class="container">
+    <p class="flow-text">Images</p>
+    <p>Images can be styled in different ways using materialize.</p>
+
+    <br>
+    <h5>Responsive Images</h5>
+    <p>To make images resize responsively to page width, you can add the class responsive-img to your image tag. It will now have a max-width: 100% and height:auto.</p>
+
+    <h5>Circular images</h5>
+    <div class="col s12 m8 offset-2 16 0ffset-13">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+            <div class="col s2">
+              <img src="gelo.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+            </div>
+            <div class="col s10">
+              <span class="black-text">
+                This is a square image. Add the "circle" class to it to make it appear circular.
+              </span>
+            </div>
+          </div>
+        </div>
+      <p>To make images appear circular, simply add class="circle" to them.</p>
+  </div>
+  <h3 class="red-text text-lighten-2">Videos</h3>
+  <p>We provide a container for Embedded Videos that resizes them responsively.</p>
+  <p class="flow-text">Responsive Embeds</p>
+    <p>To make your embeds responsive, merely wrap them with a containing div which has the class video-container.</p>
+    <div class="video-container">
+      <iframe width="853" height="480" src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <h5>Responsive Videos</h5>
+    <p>To make your HTML5 Videos responsive just add the class responsive-video to the video tag.</p>
+    <video class="responsive-video" controls>
+      <source src="20230125_2132022.mp4" type="video/mp4">
+    </video>
+  </div>
+
+
+
+
+  <!--Material Box and Sliders-->
+ <h1 class="red-text text-lighten-2 center">Media</h1>
+ <div class="divider"></div>
+ <div class="container">
+  <p>Media components include things that have to do with large media objects like Images, Video, Audio, etc.</p> 
+  <h1 class="red-text text-lighten-2">Material Box</h1>
+  <p>Material box is a material design implementation of the Lightbox plugin. When a user clicks on an image that can be enlarged, Material box centers the image and enlarges it in a smooth, non-jarring manner. To dismiss the image, the user can either click on the image again, scroll away, or press the ESC key.</p>
+
+  <img class="materialboxed" width="750" src="images.jpg">
+  <p>Creating the above image with the effect is as simple as adding a materialboxed class to the image tag.</p>
+  <h3>Option</h3>
+  <table class="striped">
+    <thead>
+      <tr>
+     <th>Name</th> 
+     <th>Type</th> 
+     <th>Description</th> 
+     <th>Default</th> 
+    </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>inDuration</td>
+        <td>Number</td>
+        <td>275</td>
+        <td>Transition out duration in milliseconds.</td>
+      </tr>
+      <tr>
+        <td>outDuration</td>
+        <td>Number</td>
+        <td>200</td>
+        <td>Transition out duration in milliseconds.</td>
+      </tr>
+      <tr>
+        <td>onOpenEnd</td>
+        <td>Function</td>
+        <td>null</td>
+        <td>Callback function called after materialbox is opened.</td>
+      </tr>
+      <tr>
+        <td>onOpenEnd</td>
+        <td>Function</td>
+        <td>null</td>
+        <td>Callback function called after materialbox is opened.
+        </td>
+      </tr>
+      <tr>
+        <td>onCloseStart</td>
+        <td>Function</td>
+        <td>null</td>
+        <td>Callback function called before materialbox is closed.
+        </td>
+      </tr>
+      <tr>
+        <td>onCloseEnd</td>
+        <td>Function</td>
+        <td>null</td>
+        <td>Callback function called after materialbox is closed.</td>
+      </tr>
+    </tbody>
+  </table>
+<br><br><br>
+<h3>Methods</h3>
+<blockquote>
+<pre>
+  Because jQuery is no longer a dependency, all the methods are 
+  called on the plugin instance. You can get the plugin instance like this:
+</pre>
+</blockquote>
+<p class="flow-text">.open();</p>
+<p>Open materialbox</p>
+<p class="flow-text">.close();</p>
+<p>Close materialbox</p>
+<p class="flow-text">.destroy();</p>
+<p>Destroy plugin instance and teardown.</p>
+<h3>Properties</h3>
+  <table class="striped">
+    <thead>
+      <tr>
+     <th>Name</th> 
+     <th>Type</th> 
+     <th>Description</th> 
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+      <td>el</td>
+      <td>Element</td>
+      <td>The DOM element the plugin was initialized with</td>
+    </tr>
+    <tr>
+      <td>options</td>
+      <td>Object</td>
+      <td>The options the instance was initialized with.</td>
+    </tr>
+    <tr>
+      <td>overlayActive</td>
+      <td>Boolean</td>
+      <td>If the materialbox overlay is showing.</td>
+    </tr>
+    <tr>
+      <td>doneAnimating</td>
+      <td>Boolean</td>
+      <td>If the carousel is no longer being animated.</td>
+    </tr>
+    <tr>
+      <td>caption</td>
+      <td>String</td>
+      <td>Caption if specified</td>
+    </tr>
+    <tr>
+      <td>originalWidth</td>
+      <td>Number</td>
+      <td>Original width of image.</td>
+    </tr>
+    <tr>
+      <td>originalHeight</td>
+      <td>Number</td>
+      <td>Original height of image.</td>
+    </tr>
+   </tbody>
+  </table>
+  <h3>Captions</h3>
+  <p>It is very easy to add a short caption to your photo. Just add the caption as a data-caption attribute.</p>
+    <img class="materialboxed" width="650" src="images/sample-1.jpg">
+  <br><br><br>
+  <h1 class="red-text text-lighten-2">Slider</h1>
+ <p>Our slider is a simple and elegant image carousel. You can also have captions that will be transitioned on their own depending on their alignment. You can also have indicators that show up on the bottom of the slider.</p>
+
+ <div class="slider">
+  <ul class="slides">
+    <li>
+      <img src="Purple-water-lily-flower-in-pond_1920x1080.jpg"> 
+      <div class="caption center-align">
+        <h3>This is our big Tagline!</h3>
+        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+      </div>
+    </li>
+  </ul>
+</div>
+    
+<h3>Options</h3>
+<table class="striped">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>indicators</td>
+      <td>Boolean</td>
+      <td>true</td>
+      <td>Set to false to hide slide indicators.</td>
+    </tr>
+    <tr>
+      <td>height</td>
+      <td>Number</td>
+      <td>400</td>
+      <td>Set height of slider.</td>
+    </tr>
+    <tr>
+      <td>duration</td>
+      <td>Number</td>
+      <td>500</td>
+      <td>Set the duration of the transition animation in ms.</td>
+    </tr>
+    <tr>
+      <td>interval</td>
+      <td>Number</td>
+      <td>6000</td>
+      <td>Set the duration between transitions in ms.</td>
+    </tr>
+  </tbody>
+</table>
+<h3>Methods</h3>
+<p>We have methods to pause, start, move to next and move to previous slide.
+</p>
+<blockquote> 
+<pre>
+  Because jQuery is no longer a dependency, all the methods are
+  called on the plugin instance. You can get the plugin instance like this:
+</pre>
+</blockquote>
+<p class="flow-text">.pause();</p>
+<p>Pause slider autoslide</p>
+<p class="flow-text">.start();</p>
+<p>Start slider autoslide</p>
+<p class="flow-text">.next();</p>
+<p>Move to next slider</p>
+<p class="flow-text">.prev();</p>
+<p>Move to prev slider</p>
+<p class="flow-text">.destroy();</p>
+<p>Destroy plugin instance and teardown</p>
+<br>
+<h3>Properties</h3>
+<table class="striped">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Desription</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>el</td>
+      <td>Element</td>
+      <td>The DOM element the plugin was initialized with.</td>
+    </tr>
+    <tr>
+      <td>options</td>
+      <td>Object</td>
+      <td>The options the instance was initialized with.</td>
+    </tr>
+    <tr>
+      <td>activeIndex</td>
+      <td>Number</td>
+      <td>Index of current slide.</td>
+    </tr>
+  </tbody>
+</table>
+<h3>Fullscreen Slider</h3>
+<p>You can easliy make this slider a fullscreen slider by adding the class fullscreen to the slider div.</p>
+      <a class="waves-effect waves-light btn s2">OPEN DEMO</a>
+ </div>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+  </script>
+  <script>
+     document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.slider');
+    var instances = M.Slider.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.slider').slider();
+  });
+  </script>
+</body>
+</html>

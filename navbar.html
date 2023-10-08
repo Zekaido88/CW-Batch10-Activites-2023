@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Navbar Prog</title>
+  <style>
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      padding: 12px 16px;
+      z-index: 1;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    </style>
+</head>
+<!--<a class="waves-effect waves-light btn-large"><i class="material-icons left">cloud</i>button</a>-->
+<body>
+  <div class="container">
+  <h1 class="deep-orange-text text-lighten-2">Navbar</h1>
+      <p>
+        The navbar is fully contained by an HTML5 Nav tag. 
+        Inside a recommended container div, there are 2 main parts of the navbar. 
+        A logo or brand link, and the navigations links. 
+        You can align these links to the left or right.
+      </p>
+</div>
+  <div class="divider"></div>
+  <div class="container">
+    <h3 class="light-blue-text text-lighten-2">Right Aligned Links</h3>
+    <p>To right align your navbar links, just add a right class to your ul that contains them.</p>
+      <nav class="light-blue lighten-2">
+        <div class="nav-wrapper">
+        <a href="#" class="brand-logo left">DALACE</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="meow.html" class="waves-effect waves-light btn-large blue lighten-3">Register</a></li>
+            <li><a href="aww.html" class="waves-effect waves-light btn-large blue lighten-3">Product</a></li>
+            <li><a href="kokak.html" class="waves-effect waves-light btn-large blue lighten-3">Purchase <i class="material-icons left">shopping_cart</i></a></li>
+          </ul>
+        </div>
+      </nav>
+      <h3 class="light-blue-text text-lighten-2">Left Aligned Links</h3>
+      <p>To left align your navbar links, just add a left class to your ul that contains them.</p>
+      <nav class="deep-purple lighten-2">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo right" class="waves-effect waves-light btn-large deep-purple lighten-3">GELOMERCH</a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="sass.html" class="deep-purple lighten-3">PRODUCT</a></li>
+            <li><a href="badges.html" class="deep-purple lighten-3">PURCHASE</a></li>
+            <li><a href="collapsible.html" class="deep-purple lighten-3">COUPONS</a></li>
+          </ul>
+        </div>
+      </nav>
+      <h3 class="light-blue-text text-lighten-2">Centering the Logo</h3>
+      <p>The logo will center itself on medium and down screens, but if you want the logo to always be centered, add the center class to your a class="brand-logo". You will have to make sure yourself that links do not overlap if you use this.</p>
+      <nav class="deep-orange lighten-2">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo center">DALACE</a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="sass.html">ACCOUNT</a></li>
+            <li><a href="badges.html">PRODUCT</a></li>
+            <li><a href="collapsible.html">PURCHASE</a></li>
+          </ul>
+        </div>
+      </nav>
+      <h3 class="light-blue-text text-lighten-2">Active Items</h3>
+      <p>Add active class to your li tags to denote the current page.</p>
+      <nav class="">
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo center">GELOMERCH</a>
+          <ul class="left hide-on-med-and-down">
+            <li><a href="sass.html">REGISTER</a></li>
+            <li><a href="badges.html">PRODUCT</a></li>
+            <li class="active"><a href="collapsible.html">PURCHASE</a></li>
+          </ul>
+        </div>
+      </nav>
+      <h3 class="light-blue-text text-lighten-2">Extended Navbar with Tabs</h3>
+      <p>To add extended components to the navbar, add the class nav-extended to the outer nav tag. This will allow your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.</p>
+      <nav class="nav-extended" class="grey lighten-1">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">GELOMERCH</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="sass.html">ACCOUNT</a></li>
+            <li><a href="badges.html">PRODUCT</a></li>
+            <li><a href="collapsible.html">PURCHASE</a></li>
+          </ul>
+        </div>
+        <div class="nav-content">
+          <ul class="tabs tabs-transparent">
+            <li class="tab"><a href="#test1">CATEGORY 1</a></li>
+            <li class="tab"><a class="active" href="#test2">CATEGORY 2</a></li>
+            <li class="tab disabled"><a href="#test3">Disabled Tab</a></li>
+            <li class="tab"><a href="#test4">CATEGORY 4</a></li>
+          </ul>
+        </div>
+      </nav>
+    
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="sass.html">REGISTER</a></li>
+        <li><a href="badges.html">PRODUCT</a></li>
+        <li><a href="collapsible.html">PURCHASE</a></li>
+      </ul>
+    
+      <div id="test1" class="col s12"></div>
+      <div id="test2" class="col s12"></div>
+      <div id="test3" class="col s12"></div>
+      <div id="test4" class="col s12"></div>
+
+      <h3 class="light-blue-text text-lighten-2">Fixed Navbar</h3>
+      <p>To make the navbar fixed, you have to add an outer wrapping div with the class navbar-fixed. This will offset your other content while making your nav fixed. You can adjust the height of this outer div to change how much offset is on your content.</p>
+      <div class="navbar-fixed">
+        <nav class="green lighten-2">
+          <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">GELOMERCH</a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="sass.html">ACCOUNT</a></li>
+              <li><a href="badges.html">PRODUCT</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <h3 class="light-blue-text text-lighten-2">Navbar Dropdown Menu</h3>
+      <p>To add a navbar dropdown menu, add the ul dropdown structure into the page. Then, add an element to trigger the dropdown menu. Make sure to supply the id of the dropdown structure to the data-target attribute of the dropdown trigger.</p>
+      <!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="#!">Item 1</a></li>
+  <li><a href="#!">Item 2</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">Item 3</a></li>
+</ul>
+<nav class="indigo lighten-2">
+  <div class="nav-wrapper">
+    <a href="#!" class="brand-logo">GELOMERCH</a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="sass.html">PRODUCTS</a></li>
+      <li><a href="badges.html">ITEMS</a></li>
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+  </div>
+</nav>
+<h3 class="light-blue-text text-lighten-2">Icon Links</h3>
+<nav class="">
+  <div class="nav-wrapper">
+    <a href="#!" class="brand-logo"><i class="material-icons">cloud</i>GELOMERCH</a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="sass.html"><i class="material-icons">search</i></a></li>
+      <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
+      <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
+      <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+    </ul>
+  </div>
+</nav>
+<p>You can add icons into links. For icon only links you don't need any additional class. Just pop the i tag in and it will work.</p>
+<nav class="teal lighten-3">
+  <div class="nav-wrapper">
+    <a href="#!" class="brand-logo">GELOMERCH</a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="sass.html"><i class="material-icons left">search</i>Link with Left Icon</a></li>
+      <li><a href="badges.html"><i class="material-icons right">view_module</i>Link with Right Icon</a></li>
+    </ul>
+  </div>
+</nav>
+<p>For adding an icon to a text link you need to add either a left or right class to the icon depending on where you want the icon to be.</p>
+<h3 class="light-blue-text text-lighten-2">Buttons</h3>
+<nav class="cyan lighten-3">
+  <div class="nav-wrapper">
+    <a href="#!" class="brand-logo">GELOMERCH</a>
+    <ul class="right hide-on-med-and-down">
+      <li><a class="waves-effect waves-light btn  brown lighten-3">ADD</a></li>
+      <li><a class="waves-effect waves-light btn  brown lighten-3">CANCEL <i class="material-icons right">cloud</i></a></li>
+      <li><a class="waves-effect waves-light btn-large  brown lighten-3">GREAT JOB!</a></li>
+    </ul>
+  </div>
+</nav>
+<p>You can add buttons into links. For buttons you don't need any additional class. Just pop the .btn class on the a tag.</p>
+<h4>Halfway FAB in Extended Navbar</h4>
+<p>Add a halfway FAB to your extended navbar.</p>
+<nav class="nav-extended">
+  <div class="nav-wrapper">
+    <a href="#!" class="brand-logo">GELOMERCH</a>
+    <ul class="right hide-on-med-and-down">
+      <li><a>DATA 1</a></li>
+      <li><a>DATA 2</a></li>
+      <li><a>DATA 3</a></li>
+    </ul>
+  </div>
+  <div class="nav-content">
+    <span class="nav-title">NAME</span>
+    <a class="btn-floating btn-large halfway-fab waves-effect waves-light teal">
+      <i class="material-icons">add</i>
+    </a>
+  </div>
+</nav>
+<h3 class="light-blue-text text-lighten-2">Search Bar</h3>
+<nav class="pink lighten-2">
+  <div class="nav-wrapper">
+    <form>
+      <div class="input-field">
+        <input id="search" type="search" required>
+        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+        <i class="material-icons">close</i>
+      </div>
+    </form>
+  </div>
+</nav>
+<p>You can add a search form in the navbar.</p>
+<h3 class="light-blue-text text-lighten-2">Mobile Collapse Button</h3>
+<nav>
+  <div class="nav-wrapper">
+    <a href="#!" class="brand-logo">GELOMERCH</a>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="sass.html">ACCOUNT</a></li>
+      <li><a href="badges.html">PRODUCTS</a></li>
+      <li><a href="collapsible.html">PURCHASE</a></li>
+      <li><a href="mobile.html">COUPONS</a></li>
+    </ul>
+  </div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+  <li><a href="sass.html">ACCOUNT</a></li>
+  <li><a href="badges.html">PRODUCT</a></li>
+  <li><a href="collapsible.html">PURCHASE</a></li>
+  <li><a href="mobile.html">COUPONS</a></li>
+</ul>
+<p>When your nav bar is resized, you will see that the links on the right turn into a hamburger icon menu. Take a look at the example below to get this functionality. Add the entire sidenav-trigger line to your nav.</p>ss
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
